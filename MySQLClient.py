@@ -45,7 +45,7 @@ class MySQLClient:
         cursor.execute('SELECT * FROM {}.{}'.format(dbName,tableName))
         return cursor.fetchall()
 
-#dbObj = MySQLClient('10.0.0.21','rbt','rbt.1234','anushan')
+dbObj = MySQLClient('10.0.0.21','rbt','rbt.1234','anushan')
 
-#print(dbObj.readDataFromTable('anushan','downloaded_contents')[0])
+print(dbObj.readDataFromTable('anushan','uploaded_contents')[-1])
 
